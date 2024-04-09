@@ -1,0 +1,142 @@
+/* styles_format/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background color for casino-like atmosphere */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Default text color */
+}
+
+.menu {
+    background-color: #111; /* Darker color for the menu background */
+    width: 100%; /* Make the menu span across the entire width of the screen */
+    position: fixed; /* Fix the menu at the top of the screen */
+    top: 0; /* Position the menu at the top */
+    z-index: 1000; /* Ensure the menu appears above other content */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block; /* Change display to inline-block for submenu */
+    position: relative; /* Add position relative for submenu positioning */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    position: relative; /* Position relative for absolute elements inside */
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff9800; /* Default color for the decoration */
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menu ul li:hover a::after,
+.menu ul li.active a::after {
+    width: 100%; /* Expand the decoration on hover */
+    left: 0; /* Position it from the left */
+}
+
+.menu ul li a:hover {
+    background-color: #444; /* Darker color on hover for better contrast */
+}
+
+.menu .submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    background-color: #111; /* Dark background color for submenu */
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.menu ul li:hover .submenu {
+    display: block; /* Show submenu on parent hover */
+}
+
+.menu .submenu li {
+    display: block;
+}
+
+.menu .submenu li a {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.menu .submenu li a:hover {
+    background-color: #555;
+}
+
+h1, p { /* Updated styles for headings and paragraphs */
+    text-align: center;
+    margin: 20px 0;
+    color: #fff; /* Text color */
+}
+
+h2 { /* Added styles for h2 elements */
+    color: #000; /* Text color set to black */
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+form {
+    width: 45%; /* Adjusted width for better alignment */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    color: #000; /* Text color set to black */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 22px); /* Adjusted width for better alignment */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ff9800; /* Casino-like color for the submit button */
+    color: #fff; /* Text color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffac33; /* Darker color on hover for the submit button */
+}
