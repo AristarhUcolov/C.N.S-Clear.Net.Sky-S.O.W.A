@@ -2,18 +2,20 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #222; /* Dark background color for casino-like atmosphere */
+    background-color: #222; /* Тёмный цвет фона для атмосферы, напоминающей казино */
+	background-image: url('../art_style/art.jpg');
+	background-size: cover;
     margin: 0;
     padding: 0;
-    color: #fff; /* Default text color */
+    color: #fff; /* Цвет текста по умолчанию */
 }
 
 .menu {
-    background-color: #111; /* Darker color for the menu background */
-    width: 100%; /* Make the menu span across the entire width of the screen */
-    position: fixed; /* Fix the menu at the top of the screen */
-    top: 0; /* Position the menu at the top */
-    z-index: 1000; /* Ensure the menu appears above other content */
+    background-color: #111; /* Более тёмный цвет для фона меню */
+    width: 100%; /* Растянуть меню на всю ширину экрана */
+    position: fixed; /* Закрепить меню вверху экрана */
+    top: 0; /* Расположить меню вверху */
+    z-index: 1000; /* Обеспечить появление меню поверх другого контента */
 }
 
 .menu ul {
@@ -23,20 +25,20 @@ body {
 }
 
 .menu ul li {
-    display: inline-block; /* Change display to inline-block for submenu */
-    position: relative; /* Add position relative for submenu positioning */
+    display: inline-block; /* Изменить отображение на inline-block для подменю */
+    position: relative; /* Добавить относительное позиционирование для позиционирования подменю */
 }
 
 .menu ul li a {
     display: block;
     padding: 15px 20px;
     text-decoration: none;
-    color: #fff; /* Text color */
+    color: #fff; /* Цвет текста */
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s;
-    position: relative; /* Position relative for absolute elements inside */
+    position: relative; /* Относительное позиционирование для абсолютных элементов внутри */
 }
 
 .menu ul li a::after {
@@ -44,7 +46,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff9800; /* Default color for the decoration */
+    background-color: #ff9800; /* Цвет по умолчанию для украшения */
     bottom: -5px;
     left: 50%;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
@@ -52,24 +54,24 @@ body {
 
 .menu ul li:hover a::after,
 .menu ul li.active a::after {
-    width: 100%; /* Expand the decoration on hover */
-    left: 0; /* Position it from the left */
+    width: 100%; /* Расширение украшения при наведении */
+    left: 0; /* Расположение слева */
 }
 
 .menu ul li a:hover {
-    background-color: #444; /* Darker color on hover for better contrast */
+    background-color: #444; /* Более тёмный цвет при наведении для лучшего контраста */
 }
 
 .menu .submenu {
-    display: none; /* Hide submenu by default */
+    display: none; /* Скрыть подменю по умолчанию */
     position: absolute;
-    background-color: #111; /* Dark background color for submenu */
+    background-color: #111; /* Тёмный цвет фона для подменю */
     min-width: 200px;
     z-index: 1000;
 }
 
 .menu ul li:hover .submenu {
-    display: block; /* Show submenu on parent hover */
+    display: block; /* Показать подменю при наведении на родительский пункт */
 }
 
 .menu .submenu li {
@@ -85,14 +87,14 @@ body {
     background-color: #555;
 }
 
-h1, p { /* Updated styles for headings and paragraphs */
+h1, p { /* Обновленные стили для заголовков и абзацев */
     text-align: center;
     margin: 20px 0;
-    color: #fff; /* Text color */
+    color: #fff; /* Цвет текста */
 }
 
-h2 { /* Added styles for h2 elements */
-    color: #000; /* Text color set to black */
+h2 { /* Добавленные стили для элементов h2 */
+    color: #000; /* Цвет текста установлен на чёрный */
 }
 
 .form-container h2 {
@@ -100,13 +102,14 @@ h2 { /* Added styles for h2 elements */
 }
 
 .form-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 form {
-    width: 45%; /* Adjusted width for better alignment */
+    width: 45%; /* Измененная ширина для лучшего выравнивания */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -116,13 +119,13 @@ form {
 label {
     font-weight: bold;
     display: block;
-    color: #000; /* Text color set to black */
+    color: #000; /* Цвет текста установлен на чёрный */
 }
 
 input[type="text"],
 input[type="password"],
 input[type="submit"] {
-    width: calc(100% - 22px); /* Adjusted width for better alignment */
+    width: calc(100% - 22px); /* Измененная ширина для лучшего выравнивания */
     padding: 10px;
     margin: 5px 0 15px;
     border: 1px solid #ccc;
@@ -130,13 +133,13 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-    background-color: #ff9800; /* Casino-like color for the submit button */
-    color: #fff; /* Text color */
+    background-color: #ff9800; /* Цвет кнопки отправки, напоминающий казино */
+    color: #fff; /* Цвет текста */
     border: none;
     cursor: pointer;
     font-size: 16px;
 }
 
 input[type="submit"]:hover {
-    background-color: #ffac33; /* Darker color on hover for the submit button */
+    background-color: #ffac33; /* Более тёмный цвет при наведении на кнопку отправки */
 }
