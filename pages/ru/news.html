@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - C.N.S - Clear Net Sky</title>
+    <meta name="description" content="Последние новости и обновления о киберугрозах и решениях по безопасности.">
+    
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/themes.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/particles.css">
+    <link rel="stylesheet" href="../../css/news.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Oxanium:wght@300;400;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../../images/logo-icon.png" type="image/png">
+</head>
+<body class="cyber-theme">
+    <div id="particles-js"></div>
+    <div class="cyber-grid"></div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="pulse-effect"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">CLEAR NET SKY</span>
+                    <span class="logo-secondary">S.O.W.A Security</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" class="nav-link" data-i18n="home">Главная</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="about">О нас</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="services">Услуги</a></li>
+                    <li><a href="news.html" class="nav-link active" data-i18n="news">Новости</a></li>
+                    <li><a href="threats.html" class="nav-link" data-i18n="threats">База угроз</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-controls">
+                <div class="language-switcher">
+                    <button id="current-language" class="icon-button">
+                        <div class="flag ru-flag small"></div>
+                    </button>
+                </div>
+                <button id="sound-toggle" class="icon-button">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="content-section active">
+            <!-- Hero Section -->
+            <div class="page-hero">
+                <h1 class="cyber-glitch" data-text="НОВОСТИ БЕЗОПАСНОСТИ">НОВОСТИ БЕЗОПАСНОСТИ</h1>
+                <p class="hero-subtitle" data-i18n="news-hero-subtitle">Будьте в курсе последних киберугроз и решений по безопасности</p>
+            </div>
+
+            <!-- News Filters -->
+            <div class="news-filters">
+                <button class="filter-button active" data-filter="all">Все новости</button>
+                <button class="filter-button" data-filter="threats">Оповещения об угрозах</button>
+                <button class="filter-button" data-filter="updates">Обновления системы</button>
+                <button class="filter-button" data-filter="research">Исследования</button>
+                <button class="filter-button" data-filter="events">События</button>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid">
+                <article class="news-article" data-category="threats">
+                    <div class="article-image">
+                        <img src="../../images/team/os.jpg" alt="Угроза программ-вымогателей">
+                        <span class="article-category">Оповещение об угрозе</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-date">Скоро</div>
+                        <h3>Скоро</h3>
+                        <p class="article-excerpt">Скоро</p>
+                        <div class="article-meta">
+                            <div class="article-author">
+                                <img src="../../images/team/os.jpg" alt="Автор" class="author-avatar">
+                                <span>Скоро</span>
+                            </div>
+                            <a href="article.html" class="primary-button small-button">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-article" data-category="updates">
+                    <div class="article-image">
+                        <img src="../../images/team/os.jpg" alt="Обновление системы">
+                        <span class="article-category">Обновление</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-date">Скоро</div>
+                        <h3>Скоро</h3>
+                        <p class="article-excerpt">Скоро</p>
+                        <div class="article-meta">
+                            <div class="article-author">
+                                <img src="../../images/team/os.jpg" alt="Автор" class="author-avatar">
+                                <span>Скоро</span>
+                            </div>
+                            <a href="article.html" class="primary-button small-button">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-article" data-category="research">
+                    <div class="article-image">
+                        <img src="../../images/team/os.jpg" alt="Исследование ИИ">
+                        <span class="article-category">Исследование</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-date">Скоро</div>
+                        <h3>Скоро</h3>
+                        <p class="article-excerpt">Скоро</p>
+                        <div class="article-meta">
+                            <div class="article-author">
+                                <img src="../../images/team/os.jpg" alt="Автор" class="author-avatar">
+                                <span>Исследовательская группа</span>
+                            </div>
+                            <a href="article.html" class="primary-button small-button">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-article" data-category="events">
+                    <div class="article-image">
+                        <img src="../../images/team/os.jpg" alt="Саммит безопасности">
+                        <span class="article-category">Событие</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-date">Скоро</div>
+                        <h3>Скоро</h3>
+                        <p class="article-excerpt">Скоро</p>
+                        <div class="article-meta">
+                            <div class="article-author">
+                                <img src="../../images/team/os.jpg" alt="Автор" class="author-avatar">
+                                <span>Команда мероприятий</span>
+                            </div>
+                            <a href="article.html" class="primary-button small-button">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-article" data-category="threats">
+                    <div class="article-image">
+                        <img src="../../images/team/os.jpg" alt="Кампания фишинга">
+                        <span class="article-category">Оповещение об угрозе</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-date">Скоро</div>
+                        <h3>Скоро</h3>
+                        <p class="article-excerpt">Скоро</p>
+                        <div class="article-meta">
+                            <div class="article-author">
+                                <img src="../../images/team/os.jpg" alt="Автор" class="author-avatar">
+                                <span>Разведка угроз</span>
+                            </div>
+                            <a href="article.html" class="primary-button small-button">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-article" data-category="updates">
+                    <div class="article-image">
+                        <img src="../../images/team/os.jpg" alt="Мобильная безопасность">
+                        <span class="article-category">Обновление</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-date">Скоро</div>
+                        <h3>Скоро</h3>
+                        <p class="article-excerpt">Скоро</p>
+                        <div class="article-meta">
+                            <div class="article-author">
+                                <img src="../../images/team/os.jpg" alt="Автор" class="author-avatar">
+                                <span>Мобильная команда</span>
+                            </div>
+                            <a href="article.html" class="primary-button small-button">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="pagination-button active">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <h2>Будьте в курсе новостей безопасности</h2>
+                <p>Подпишитесь на нашу рассылку, чтобы получать последние данные об угрозах и обновлениях безопасности прямо на вашу почту.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Введите ваш email адрес" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>C.N.S</h4>
+                <p data-i18n="footer-desc">Передовые решения кибербезопасности для современного цифрового мира.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="quick-links">Быстрые ссылки</h4>
+                <ul>
+                    <li><a href="../../index.html" data-i18n="home">Главная</a></li>
+                    <li><a href="about.html" data-i18n="about">О нас</a></li>
+                    <li><a href="services.html" data-i18n="services">Услуги</a></li>
+                    <li><a href="news.html" data-i18n="news">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="resources">Ресурсы</h4>
+                <ul>
+                    <li><a href="threats.html" data-i18n="threat-database">База угроз</a></li>
+                    <li><a href="#" data-i18n="security-tips">Советы по безопасности</a></li>
+                    <li><a href="#" data-i18n="white-papers">Белые бумаги</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="contact-us">Свяжитесь с нами</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:aristarh.ucolov@gmail.com">aristarh.ucolov@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:Скоро">Скоро</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Clear Net Sky | S.O.W.A Security Division. <span data-i18n="rights-reserved">Все права защищены.</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../js/particles.js"></script>
+    <script src="../../js/language.js"></script>
+    <script src="../../js/sounds.js"></script>
+    <script src="../../js/news.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

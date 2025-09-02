@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База угроз - C.N.S - Clear Net Sky</title>
+    <meta name="description" content="База данных киберугроз и информация о методах защиты.">
+    
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/themes.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/particles.css">
+    <link rel="stylesheet" href="../../css/threats.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Oxanium:wght@300;400;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../../images/logo-icon.png" type="image/png">
+</head>
+<body class="cyber-theme">
+    <div id="particles-js"></div>
+    <div class="cyber-grid"></div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="pulse-effect"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">CLEAR NET SKY</span>
+                    <span class="logo-secondary">S.O.W.A Security</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" class="nav-link" data-i18n="home">Главная</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="about">О нас</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="services">Услуги</a></li>
+                    <li><a href="news.html" class="nav-link" data-i18n="news">Новости</a></li>
+                    <li><a href="threats.html" class="nav-link active" data-i18n="threats">База угроз</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-controls">
+                <div class="language-switcher">
+                    <button id="current-language" class="icon-button">
+                        <div class="flag ru-flag small"></div>
+                    </button>
+                </div>
+                <button id="sound-toggle" class="icon-button">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="content-section active">
+            <!-- Hero Section -->
+            <div class="page-hero">
+                <h1 class="cyber-glitch" data-text="БАЗА УГРОЗ">БАЗА УГРОЗ</h1>
+                <p class="hero-subtitle" data-i18n="threats-hero-subtitle">Исчерпывающая информация о киберугрозах и методах защиты</p>
+            </div>
+
+            <!-- Threat Filters -->
+            <div class="threat-filters">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label for="threat-type">Тип угрозы</label>
+                        <select id="threat-type">
+                            <option value="all">Все типы</option>
+                            <option value="malware">Вредоносное ПО</option>
+                            <option value="phishing">Фишинг</option>
+                            <option value="ransomware">Ransomware</option>
+                            <option value="ddos">DDoS атаки</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="severity">Уровень серьезности</label>
+                        <select id="severity">
+                            <option value="all">Все уровни</option>
+                            <option value="critical">Критический</option>
+                            <option value="high">Высокий</option>
+                            <option value="medium">Средний</option>
+                            <option value="low">Низкий</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="date-range">Период</label>
+                        <select id="date-range">
+                            <option value="7">Последние 7 дней</option>
+                            <option value="30">Последние 30 дней</option>
+                            <option value="90">Последние 90 дней</option>
+                            <option value="365">Последний год</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="search">Поиск угроз</label>
+                        <input type="text" id="search" placeholder="Введите название угрозы...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Threat Stats -->
+            <div class="threat-stats">
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Активных угроз</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1%</div>
+                    <div class="stat-label">Успешно блокируется</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Новых угроз за сутки</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Критических угроз</div>
+                </div>
+            </div>
+
+            <!-- Threats Table -->
+            <div class="threats-table-container">
+                <div class="table-header">
+                    <h2>Последние обнаруженные угрозы</h2>
+                    <div class="table-actions">
+                        <button class="secondary-button small-button">Экспорт данных</button>
+                        <button class="primary-button small-button">Обновить</button>
+                    </div>
+                </div>
+                <table class="threats-table">
+                    <thead>
+                        <tr>
+                            <th>Название угрозы</th>
+                            <th>Тип</th>
+                            <th>Уровень риска</th>
+                            <th>Обнаружено</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>Троян</td>
+                            <td class="severity-high">Высокий</td>
+                            <td>-</td>
+                            <td>Активна</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Фишинг</td>
+                            <td class="severity-medium">Средний</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Ransomware</td>
+                            <td class="severity-critical">Критический</td>
+                            <td>-</td>
+                            <td>Активна</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>DDoS</td>
+                            <td class="severity-medium">Средний</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Threat Detail -->
+            <div class="threat-detail">
+                <div class="detail-header">
+                    <h2>-</h2>
+                    <div class="threat-meta">
+                        <span>Тип: Троян</span>
+                        <span>Уровень риска: Высокий</span>
+                        <span>-</span>
+                    </div>
+                </div>
+                <div class="detail-content">
+                    <div class="detail-section">
+                        <h3>Описание</h3>
+                        <p>Многофункциональный троян, ориентированный на кражу учетных данных и установку дополнительного вредоносного ПО. Использует машинное обучение для обхода традиционных систем защиты.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Цели атаки</h3>
+                        <p>Корпоративные сети, финансовые учреждения, системы управления. Распространяется через фишинговые письма и скомпрометированные веб-сайты.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Индикаторы компрометации (IOC)</h3>
+                        <p>Хэши файлов: -..., dns-запросы: -, IP-адреса: -</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Методы распространения</h3>
+                        <p>Фишинговые кампании, эксплуатация уязвимостей, загрузки с скомпрометированных сайтов</p>
+                    </div>
+                </div>
+                <div class="remediation-steps">
+                    <h3>Меры по устранению</h3>
+                    <ol>
+                        <li>Обновите антивирусные сигнатуры до последней версии</li>
+                        <li>Заблокируйте указанные IOC в ваших системах защиты</li>
+                        <li>Проведите проверку всех систем на наличие компрометации</li>
+                        <li>Обновите ПО для устранения известных уязвимостей</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>C.N.S</h4>
+                <p data-i18n="footer-desc">Передовые решения в области кибербезопасности для современного цифрового мира.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="quick-links">Быстрые ссылки</h4>
+                <ul>
+                    <li><a href="../../index.html" data-i18n="home">Главная</a></li>
+                    <li><a href="about.html" data-i18n="about">О нас</a></li>
+                    <li><a href="services.html" data-i18n="services">Услуги</a></li>
+                    <li><a href="news.html" data-i18n="news">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="resources">Ресурсы</h4>
+                <ul>
+                    <li><a href="threats.html" data-i18n="threat-database">База угроз</a></li>
+                    <li><a href="#" data-i18n="security-tips">Советы по безопасности</a></li>
+                    <li><a href="#" data-i18n="white-papers">Белые бумаги</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="contact-us">Свяжитесь с нами</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:aristarh.ucolov@gmail.com">aristarh.ucolov@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:Скоро">Скоро</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Clear Net Sky | S.O.W.A Security Division. <span data-i18n="rights-reserved">Все права защищены.</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../js/particles.js"></script>
+    <script src="../../js/language.js"></script>
+    <script src="../../js/sounds.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - C.N.S - Clear Net Sky</title>
+    <meta name="description" content="Свяжитесь с нами для консультации по вопросам кибербезопасности.">
+    
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/themes.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/particles.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Oxanium:wght@300;400;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../../images/logo-icon.png" type="image/png">
+</head>
+<body class="cyber-theme">
+    <div id="particles-js"></div>
+    <div class="cyber-grid"></div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="pulse-effect"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">CLEAR NET SKY</span>
+                    <span class="logo-secondary">S.O.W.A Security</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" class="nav-link" data-i18n="home">Главная</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="about">О нас</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="services">Услуги</a></li>
+                    <li><a href="news.html" class="nav-link" data-i18n="news">Новости</a></li>
+                    <li><a href="threats.html" class="nav-link" data-i18n="threats">База угроз</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-i18n="contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-controls">
+                <div class="language-switcher">
+                    <button id="current-language" class="icon-button">
+                        <div class="flag ru-flag small"></div>
+                    </button>
+                </div>
+                <button id="sound-toggle" class="icon-button">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="content-section active">
+            <!-- Hero Section -->
+            <div class="page-hero">
+                <h1 class="cyber-glitch" data-text="КОНТАКТЫ">КОНТАКТЫ</h1>
+                <p class="hero-subtitle" data-i18n="contact-hero-subtitle">Свяжитесь с нашей командой безопасности</p>
+            </div>
+
+            <!-- Contact Grid -->
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Адрес</h4>
+                            <p>Coming Soon,<br>Coming Soon</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Телефон</h4>
+                            <p><a href="tel:Скоро">Coming Soon</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:aristarh.ucolov@gmail.com">aristarh.ucolov@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+							<a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
+							<a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
+							<a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
+							<a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Форма обратной связи</h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Компания</label>
+                                <input type="text" id="company">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Интересующая услуга</label>
+                            <select id="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="network">Защита сети</option>
+                                <option value="endpoint">Защита устройств</option>
+                                <option value="cloud">Облачная безопасность</option>
+                                <option value="consulting">Консультации</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="primary-button full-width">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="emergency-contact">
+                <h3>Экстренная помощь</h3>
+                <p>Если вы столкнулись с кибератакой или подозреваете компрометацию ваших систем, немедленно свяжитесь с нашей командой быстрого реагирования.</p>
+                <a href="tel:Coming Soon" class="emergency-link">Coming Soon</a>
+            </div>
+
+            <!-- Map Container -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d950.889170028318!2d21.736623!3d-76.212066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNzbCsDEyJzQzLjQiUyAyMcKwNDQnMTEuOCJF!5e0!3m2!1sru!2s!4v1756776391815!5m2!1sru!2s" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>C.N.S</h4>
+                <p data-i18n="footer-desc">Передовые решения в области кибербезопасности для современного цифрового мира.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="quick-links">Быстрые ссылки</h4>
+                <ul>
+                    <li><a href="../../index.html" data-i18n="home">Главная</a></li>
+                    <li><a href="about.html" data-i18n="about">О нас</a></li>
+                    <li><a href="services.html" data-i18n="services">Услуги</a></li>
+                    <li><a href="news.html" data-i18n="news">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="resources">Ресурсы</h4>
+                <ul>
+                    <li><a href="threats.html" data-i18n="threat-database">База угроз</a></li>
+                    <li><a href="#" data-i18n="security-tips">Советы по безопасности</a></li>
+                    <li><a href="#" data-i18n="white-papers">Белые бумаги</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="contact-us">Свяжитесь с нами</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:aristarh.ucolov@gmail.com">aristarh.ucolov@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:Скоро">Скоро</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Clear Net Sky | S.O.W.A Security Division. <span data-i18n="rights-reserved">Все права защищены.</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../js/particles.js"></script>
+    <script src="../../js/language.js"></script>
+    <script src="../../js/sounds.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
