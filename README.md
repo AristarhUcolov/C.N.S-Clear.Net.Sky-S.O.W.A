@@ -6,7 +6,7 @@
 
 #### Автор Концепта: Аристарх Уколов ( Aristarh Ucolov )
 
-🧥 **[C.N.S: Clear Net Sky = S.O.W.A | Owl never sleeps:](https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/languages/english.html)**
+🧥 **[C.N.S: Clear Net Sky = S.O.W.A | Owl never sleeps:](https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/)**
 **The beginning of a new era** to **create** a new **Internet protection regime**
 **using various methods** of **protecting and assisting the civilian population in the field of Information Technology** 🧥
 
